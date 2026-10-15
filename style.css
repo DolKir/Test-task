@@ -185,7 +185,7 @@ header{
     letter-spacing: 0.5px;
     padding: 8px 12px;
     border-radius: var(--radius);
-    transition: background var(--transition), color var(--transition);
+    transition: var(--transition), color var(--transition);
 }
 .nav__link:hover {
     background: #f5f3ed;
@@ -220,7 +220,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background var(--transition);
+    transition: var(--transition);
 }
 .nav__search-btn:hover {
     background: var(--color-accent-hover);
