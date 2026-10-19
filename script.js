@@ -18,7 +18,7 @@
             minimumFractionDigits: Number.isInteger(number) ? 0 : 2,
             maximumFractionDigits: 2,
         }).format(number);
-        return `${formatted} руб`;
+        return `${formatted} ₽`;
     }
     function updateProduct(input) {
         const { sku, price, oldPrice } = input.dataset;
