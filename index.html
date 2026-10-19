@@ -12,7 +12,7 @@
 <body>
     <header>
         <div class="header__inner">
-            <a href="/" class="header__logo">
+            <a href="#" class="header__logo">
                 <img class="header__logo-icon" src="/src/logo.png" alt="teaboom">
                 <div class="header__logo-text">
                     <span class="header__logo-title">Чайный Бум</span>
@@ -20,7 +20,7 @@
                 </div>
             </a>
             <div class="header_contacts">
-                <a href="+74951201551" class="header__phone">+7 (495) 120-15-51</a>
+                <a href="tel:+74951201551" class="header__phone">+7 (495) 120-15-51</a>
                 <a href="email:info@teaboom.ru" class="header__email">info@teaboom.ru</a>
                 <div class="header__schedule">
                     <span>пн - пт с 10:00 до 19:00 </span>
@@ -29,10 +29,10 @@
             </div>
 
             <div class="header__action">
-                <a href="/" class="header__cart">
+                <a href="#" class="header__cart">
                     <img src="src/shop-cart.png" alt="shop-cart" class="header__shopcart-image">
+                    <span class="header__cart-count">0</span>
                 </a>
-                <span class="header__cart-count">0</span>
             </div>
         </div>
     </header>
@@ -40,22 +40,34 @@
         <div class ="container__nav__inner">
             <ul>
                 <li><a href="#" class="nav__link">Главная</a></li>
-                <li><a href="#" class="nav__link nav_link--has-dropdown">Каталог</a></li>
+                <li><a href="#" class="nav__link nav__link--has-dropdown">Каталог</a></li>
                 <li><a href="#" class="nav__link">Подарки</a></li>
                 <li><a href="#" class="nav__link">Прайслист</a></li>
                 <li><a href="#" class="nav__link">Отзывы</a></li>
                 <li><a href="#" class="nav__link">Контакты</a></li>
             </ul>
-            <div class="nav__search">
+            <form class="nav__search">
                 <input type="text" class="nav__search-input" placeholder="Введите название товара или артикуль">
                 <button class="nav__search-btn" aria-label="Поиск">
-                    <img src="/src/search-btn.png" alt="Поиск" class="nav__search__button">
+                    <img src="/src/search-btn.png" alt="Поиск" class="nav__search-icon">
                 </button>
-            </div>
+            </form>
         </div>
     </nav>
     <main>
-
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+            <ol class="breadcrumbs__list">
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Улун</a></li>
+                <li><a href="#">Ароматизированный улун</a></li>
+                <li arial-current ="page">Ананасовый улун</li>
+            </ol>
+        </nav>
+        <article class="product">
+            <div class="product__gallery">
+                <img src="/src/image1.jpg" alt="Ананасовый улун" class="product__image">
+            </div>
+        </article>
     </main>
     <footer class="footer">
         <div class="container">
