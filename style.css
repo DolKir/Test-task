@@ -510,11 +510,6 @@ header{
     }
 }
 @media (max-width: 767px) {
-    .header__email,
-    .header__schedule {
-        display: none;
-    }
-
     .nav__inner {
         flex-direction: column;
         flex-wrap: nowrap;
