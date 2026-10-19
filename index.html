@@ -66,7 +66,52 @@
         <article class="product">
             <div class="product__gallery">
                 <img src="/src/image1.jpg" alt="Ананасовый улун" class="product__image">
+                <span class="product__badge" id="discount-bage">-7%</span>
             </div>
+            
+            <div class="product__info">
+                <a href="#" class="product__category">Ароматизированный улун</a>
+                <h1 class="product__title">Ананасовый улун</h1>
+                <p class="product_stock">В наличии</p>
+                <form class="product__form" id="product-form" onsubmit="return false">
+                    <fieldset class="weghts">
+                        <legend class="weights__legend">Фасовка</legend>
+                        <div class="weights__list">
+                            <lable class="weights__item">
+                                <input type="radio" class="weights__input" name="weight" value="100" data-sku="01306" data-price="326.40" data-old-price="349.20" checked>
+                                <span class="weights__label">100 г</span>
+                            </lable>
+                            <lable class="weights__item">
+                                <input type="radio" class="weights__input" name="weight" value="500" data-sku="01307" data-price="1432" data-old-price="1646" checked>
+                                <span class="weights__label">500 г</span>
+                            </lable>
+                            <lable class="weights__item">
+                                <input type="radio" class="weights__input" name="weight" value="1000" data-sku="01308" data-price="2064" data-old-price="2592" checked>
+                                <span class="weights__label">1000 г</span>
+                            </lable>
+                            <lable class="weights__item">
+                                <input type="radio" class="weights__input" name="weight" value="5000" data-sku="01309" data-price="6320" data-old-price="8710" checked>
+                                <span class="weights__label">5000 г</span>
+                            </lable>
+                        </div>
+                    </fieldset>
+                    
+                    <p class="product__sku">Артикуль:
+                        <span id="product-sku">01306</span>
+                    </p>
+                    <div class="price" arial-live="polite">
+                        <span class="price__current" id="price-current">326,40 руб</span>\
+                        <s class="price__old" id="price-old">349.20 руб</s>
+                    </div>
+
+                    <button type="button" class="product__buy" id="buy-btn">
+                        <img src="/src/shop-cart.png" alt="buy-button" class="product-buy-icon">
+                        <span class="product__buy-text">В корзину</span>
+                    </button>
+                </form>
+                
+            </div>
+            
         </article>
     </main>
     <footer class="footer">
