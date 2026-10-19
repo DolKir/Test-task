@@ -510,6 +510,7 @@ header{
     }
 }
 @media (max-width: 767px) {
+    
     .nav__inner {
         flex-direction: column;
         flex-wrap: nowrap;
