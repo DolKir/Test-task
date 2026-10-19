@@ -1,27 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ананасовый улун</title>
+    <meta name="description" content="Ананасовый улун">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="header__inner">
+    <header class="header">
+        <div class="header__inner container">
             <a href="#" class="header__logo">
-                <img class="header__logo-icon" src="/src/logo.png" alt="teaboom">
+                <img class="header__logo-icon" src="src/logo.png" alt="teaboom">
                 <div class="header__logo-text">
                     <span class="header__logo-title">Чайный Бум</span>
-                    <span class="header__logo-subtitel">Интернет-магазин чая и посуды</span>
+                    <span class="header__logo-subtitle">Интернет-магазин чая и посуды</span>
                 </div>
             </a>
-            <div class="header_contacts">
+            <div class="header__contacts">
                 <a href="tel:+74951201551" class="header__phone">+7 (495) 120-15-51</a>
-                <a href="email:info@teaboom.ru" class="header__email">info@teaboom.ru</a>
+                <a href="mailto:info@teaboom.ru" class="header__email">info@teaboom.ru</a>
                 <div class="header__schedule">
                     <span>пн - пт с 10:00 до 19:00 </span>
                     <span>сб - вс с 12:00 до 16:00</span>
@@ -37,8 +38,8 @@
         </div>
     </header>
     <nav class="nav">
-        <div class ="container__nav__inner">
-            <ul>
+        <div class="nav__inner">
+            <ul class="nav__list">
                 <li><a href="#" class="nav__link">Главная</a></li>
                 <li><a href="#" class="nav__link nav__link--has-dropdown">Каталог</a></li>
                 <li><a href="#" class="nav__link">Подарки</a></li>
@@ -47,26 +48,26 @@
                 <li><a href="#" class="nav__link">Контакты</a></li>
             </ul>
             <form class="nav__search">
-                <input type="text" class="nav__search-input" placeholder="Введите название товара или артикуль">
+                <input type="text" class="nav__search-input" placeholder="Введите название товара или артикул">
                 <button class="nav__search-btn" aria-label="Поиск">
                     <img src="/src/search-btn.png" alt="Поиск" class="nav__search-icon">
                 </button>
             </form>
         </div>
     </nav>
-    <main>
+    <main class="container">
         <nav class="breadcrumbs" aria-label="Хлебные крошки">
             <ol class="breadcrumbs__list">
                 <li><a href="#">Каталог</a></li>
                 <li><a href="#">Улун</a></li>
                 <li><a href="#">Ароматизированный улун</a></li>
-                <li arial-current ="page">Ананасовый улун</li>
+                <li aria-current = "page">Ананасовый улун</li>
             </ol>
         </nav>
         <article class="product">
             <div class="product__gallery">
                 <img src="/src/image1.jpg" alt="Ананасовый улун" class="product__image">
-                <span class="product__badge" id="discount-bage">-7%</span>
+                <span class="product__badge" id="discount-badge">-7%</span>
             </div>
             
             <div class="product__info">
@@ -74,33 +75,33 @@
                 <h1 class="product__title">Ананасовый улун</h1>
                 <p class="product__stock">В наличии</p>
                 <form class="product__form" id="product-form" onsubmit="return false">
-                    <fieldset class="weghts">
+                    <fieldset class="weights">
                         <legend class="weights__legend">Фасовка</legend>
                         <div class="weights__list">
-                            <lable class="weights__item">
+                            <label class="weights__item">
                                 <input type="radio" class="weights__input" name="weight" value="100" data-sku="01306" data-price="326.40" data-old-price="349.20" checked>
                                 <span class="weights__label">100 г</span>
-                            </lable>
-                            <lable class="weights__item">
+                            </label>
+                            <label class="weights__item">
                                 <input type="radio" class="weights__input" name="weight" value="500" data-sku="01307" data-price="1432" data-old-price="1646" checked>
                                 <span class="weights__label">500 г</span>
-                            </lable>
-                            <lable class="weights__item">
+                            </label>
+                            <label class="weights__item">
                                 <input type="radio" class="weights__input" name="weight" value="1000" data-sku="01308" data-price="2064" data-old-price="2592" checked>
                                 <span class="weights__label">1000 г</span>
-                            </lable>
-                            <lable class="weights__item">
+                            </label>
+                            <label class="weights__item">
                                 <input type="radio" class="weights__input" name="weight" value="5000" data-sku="01309" data-price="6320" data-old-price="8710" checked>
                                 <span class="weights__label">5000 г</span>
-                            </lable>
+                            </label>
                         </div>
                     </fieldset>
                     
-                    <p class="product__sku">Артикуль:
+                    <p class="product__sku">Артикул:
                         <span id="product-sku">01306</span>
                     </p>
-                    <div class="price" arial-live="polite">
-                        <span class="price__current" id="price-current">326,40 руб</span>\
+                    <div class="price" aria-live="polite">
+                        <span class="price__current" id="price-current">326,40 руб</span>
                         <s class="price__old" id="price-old">349.20 руб</s>
                     </div>
 
@@ -110,7 +111,7 @@
                     </button>
                 </form>
 
-                <section class="product__summery" aria-labelledby="summary-title">
+                <section class="product__summary" aria-labelledby="summary-title">
                     <h2 class="product__summary-title" id="summary-title">Описание</h2>
                     <p class="product__summary-text">
                         Состав: китайский бирюзовый чай, цукаты, натуральные ароматические масла. Светлый Фуцзяньский улун с ароматом ананаса. В сухом виде — красивый крупный лист изумрудного цвета, скруткой листа напоминающий Те Гуань Инь. В прогретой посуде аромат свежей, весенней зелени и спелого ананаса. Скрученный лист медленно раскрывается, отдавая весь свой аромат. Тем, кому пришёлся по вкусу этот чай, может также понравиться связанный чай «Ананасовый рай».
