@@ -263,6 +263,11 @@ header{
 .breadcrumbs__list [aria-current]{
     color: var(--color-text);
 }
+.breadcrumbs__list li + li::before {
+    content: '-';
+    margin-right: 5px;
+    color: var(--color-text-light);
+}
 .product{
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0,1fr);
