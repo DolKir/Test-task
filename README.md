@@ -8,7 +8,7 @@
 1. Скачайте репозиторий c GitHub используя кнопки **Code -> DownloadZip** и распакуйте архив.
 2. Откройте файл `index.html` двойным кликом.
 
-###Вариант третьий через Git: 
+### Вариант третьий через Git: 
 Используйте команды:
 ```bash
 git clone https://github.com/DolKir/Test-task.git
