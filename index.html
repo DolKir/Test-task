@@ -72,7 +72,7 @@
             <div class="product__info">
                 <a href="#" class="product__category">Ароматизированный улун</a>
                 <h1 class="product__title">Ананасовый улун</h1>
-                <p class="product_stock">В наличии</p>
+                <p class="product__stock">В наличии</p>
                 <form class="product__form" id="product-form" onsubmit="return false">
                     <fieldset class="weghts">
                         <legend class="weights__legend">Фасовка</legend>
@@ -105,13 +105,15 @@
                     </div>
 
                     <button type="button" class="product__buy" id="buy-btn">
-                        <img src="/src/shop-cart.png" alt="buy-button" class="product-buy-icon">
+                        <img src="/src/shop-cart.png" alt="buy-button" class="product__buy-icon">
                         <span class="product__buy-text">В корзину</span>
                     </button>
                 </form>
-                
+
+                <section class="product__summery" aria-labelledby="summary-title">
+                    <h2 class="product__summary-title" id="summary-title">О чае</h2>
+                </section>
             </div>
-            
         </article>
     </main>
     <footer class="footer">
